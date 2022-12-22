@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bbab0e43d8.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="./font-awesome4/css/font-awesome.css" type="image/x-icon">
+        <title>Quiz</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <button class="nav-btn">
+                Start Using This Template
+            </button>
+        </div>
+        <div class="body-content">
+            <a href="#" onmouseover="changeText('This is my channel in Youtube')" onmouseout="defaultText()">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="#" onclick="redirect(facebook/instagram)" id="facebook" onmouseover="changeText('This is my Fanpage in Facebook')" onmouseout="defaultText()">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#" onclick="redirect(facebook/instagram)" id="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <h4 id="text">Follow me on Social Media</h4>
+        </div>
+        <div class="footer">
+            <button class="footer-btn" onclick="window.location.href=('./game.html')">
+                Let's get started
+            </button>
+        </div>
+    </body>
+    <script>
+        function changeText(text) {
+            var display = document.getElementById('text');
+            display.innerHTML = ""
+            display.innerHTML = text;
+        }
+        
+        function defaultText()
+        {
+            var display = document.getElementById('text');
+            display.innerHTML = "";
+            display.innerHTML = "Follow me on Social Media";
+        }
+
+        function redirect(facebook) {
+            window.location.assign("https://facebook.com")
+        }
+
+        function redirect(instagram) {
+            window.location.assign("https://instagram.com")
+        }
+    </script>
+</html>
