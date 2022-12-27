@@ -1,1 +1,3 @@
-My name is 4uckd3v
+# Personal website of [cducdev](https://github.io/cdudvdev)
+
+This is my personal website.
