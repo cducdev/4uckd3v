@@ -52,8 +52,7 @@ body {
 
 .container {
 	width: 90%;
-	/* height: auto; */
-	height: 90vh;
+	min-height: 90vh;
 	margin: 0 auto;
 }
 
